@@ -9,6 +9,8 @@ import AddUser from './users/AddUser';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import NotFound from './components/pages/NotFound';
+import EditUser from './users/EditUser';
+import User from './users/User';
 
 const App = ( )=>
 {
@@ -21,6 +23,9 @@ const App = ( )=>
       <Route exact path='/about' component={About} />
       <Route exact path='/contact' component={Contact} />
       <Route exact path='/users/add' component={AddUser} />
+      <Route exact path='/users/edit/:id' component={EditUser} />
+      <Route  exact path='/users/:id' component={User} />
+
       <Route component={NotFound} />
 
     </Switch>
